@@ -280,9 +280,8 @@
                         </div>
 
                         <div class="action-buttons">
-                            <a class="btn-outline">ADD TO CART</a>
-                            <a class="btn-outline-icon"><i class="far fa-heart"></i></a>
-                            <a class="btn-outline-icon"><i class="fas fa-chart-pie"></i></a>
+                            <a href="{{route('product.delete', ['id' => $product->id])}}" class="btn btn-danger text-white mx-2">Delete</a>
+                            <a href="{{route('product.edit', ['id' => $product->id])}}" class="btn text-white btn-info">Edit</a>
                         </div>
                     </div>
                 </div>
